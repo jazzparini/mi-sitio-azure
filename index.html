@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¡Hola desde Azure Static Web Apps! 🚀</h1>
-    <p>Este es mi primer proyecto desplegado en la nube.</p>
+    <div class="container">
+        <h1>🚀 Mi Sitio en Azure Static Web Apps</h1>
+        <p>Este es mi primer proyecto desplegado en la nube.</p>
+
+        <div class="card">
+            <h2>Contador interactivo</h2>
+            <p id="contador">0</p>
+            <button onclick="incrementar()">➕ Sumar</button>
+            <button onclick="decrementar()">➖ Restar</button>
+            <button onclick="resetear()">🔄 Reiniciar</button>
+        </div>
+
+        <div class="card">
+            <h2>¿Qué hora es en Azure?</h2>
+            <p id="reloj">--:--:--</p>
+        </div>
+
+        <div class="card">
+            <h2>Lista de tareas</h2>
+            <input type="text" id="tareaInput" placeholder="Nueva tarea...">
+            <button onclick="agregarTarea()">Agregar</button>
+            <ul id="listaTareas"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
